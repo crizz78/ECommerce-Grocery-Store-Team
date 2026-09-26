@@ -18,5 +18,5 @@ Proyecto de Tienda en Línea desarrollado con Flask, MySQL y contenerizado media
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone [https://github.com/crizz78/ECommerce-Grocery-Store-Team.git](https://github.com/crizz78/ECommerce-Grocery-Store-Team.git)
+   git clone https://github.com/crizz78/ECommerce-Grocery-Store-Team.git
    cd ECommerce-Grocery-Store-Team
