@@ -1,27 +1,33 @@
 version: '3.8'
 
 services:
+  # Servicio de la Base de Datos MySQL
   db:
     image: mysql:8.0
+    container_name: grostop_db
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: grostop
     ports:
       - "3306:3306"
     volumes:
       - db_data:/var/lib/mysql
+      # Carga automática del script SQL al iniciar el contenedor por primera vez
       - ./grostop.sql:/docker-entrypoint-initdb.d/grostop.sql
 
+  # Servicio de la Aplicación Flask
   web:
     build: .
+    container_name: grostop_web
+    restart: always
     ports:
       - "5000:5000"
     environment:
-      - DB_HOST=db
-      - DB_USER=root
-      - DB_PASSWORD=rootpassword
-      - DB_NAME=grostop
+      MYSQL_HOST: db
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_DB: grostop
     depends_on:
       - db
 
