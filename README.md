@@ -44,13 +44,13 @@ Todos los integrantes deben llevar su **Bitácora Individual obligatoria** regis
    git clone https://github.com/crizz78/ECommerce-Grocery-Store-Team.git
    cd ECommerce-Grocery-Store-Team
 
-2. **Iniciar los contenedores:**
+3. **Iniciar los contenedores:**
 
    docker-compose up
 
    > Nota: Docker construirá la imagen del contenedor grostop_web con las dependencias e iniciará el contenedor grostop_db, importando automáticamente la base de datos desde grostop.sql.
 
-3. **Acceder a la aplicación:**
+4. **Acceder a la aplicación:**
 
    Abre tu navegador e ingresa a:
    http://localhost:5000
