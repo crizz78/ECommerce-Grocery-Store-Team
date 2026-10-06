@@ -42,6 +42,7 @@ Todos los integrantes deben llevar su **Bitácora Individual obligatoria** regis
    Abre tu terminal (PowerShell o CMD) y ejecuta:
 
    git clone https://github.com/crizz78/ECommerce-Grocery-Store-Team.git
+   
    cd ECommerce-Grocery-Store-Team
 
 3. **Iniciar los contenedores:**
